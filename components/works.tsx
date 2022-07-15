@@ -5,10 +5,10 @@ import Image from 'next/image'
 
 const Works = () => (
     <TileWrapper numOfPages={1}>
-        <TileBackground><WorkBackground /> </TileBackground>
-        <TileContent>
+        <TileBackground progress={0} ><WorkBackground /> </TileBackground>
+        <TileContent progress={0} >
             <Tile page ={0} renderContent={({progress}) =>(
-                <WorkContainer>
+                <WorkContainer progress={0} >
                     <WorkLeft progress={progress}>
                         <div>Construimos</div>
                         <div className='text-4xl md:text-5xl font-semibold tracking-tight'>Aplicaciones sorprendentes</div>

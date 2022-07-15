@@ -51,11 +51,11 @@ export const TileWrapper: React.FC<WrapperProps> = ({
     )
 }
 
-export const TileBackground: React.FC = ({ children }) => (
+export const TileBackground: React.FC<{ progress: number; children: any}> = ({ children }) => (
     <div className="absolute h-full w-full">{children}</div>
 )
 
-export const TileContent: React.FC = ({children}) => (
+export const TileContent: React.FC<{ progress: number; children: any}> = ({children}) => (
     <div className="sticky top-0 h-screen overflow-hidden">{children}</div>
     
 )
