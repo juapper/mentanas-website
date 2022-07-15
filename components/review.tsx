@@ -2,6 +2,7 @@ import React from 'react'
 
 interface Props {
     by: string
+    children : any
 }
 
 const Review: React.FC<Props> = ({children, by}) => (

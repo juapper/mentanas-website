@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const ClientLogos: React.FC =() => (
     <>
-    <SliderContainer initialOffsetX={0} ClassName={''} contentWidth={1290} >
+    <SliderContainer initialOffsetX={0} className={''} contentWidth={1290} >
 
         <SliderItem width={150}>
         <Image src="/assets/phpp.png" width={150} height={50} alt="PHP logo" objectFit="contain"/>

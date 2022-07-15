@@ -4,8 +4,9 @@ import useAnimationFrame from '../utils/use-animation-frame'
 
 interface Props {
     initialOffsetX: number
-    ClassName: string
+    className: string
     contentWidth: number
+    children: any
 }
 
 const SliderContainer: React.FC<Props> = ({children, initialOffsetX, className, contentWidth}) =>{
@@ -43,6 +44,7 @@ const SliderContainer: React.FC<Props> = ({children, initialOffsetX, className, 
 
 interface ItemProps {
     width: number
+    children: any
 }
 
 export const SliderItem: React.FC<ItemProps> = ({ children, width}) => (
